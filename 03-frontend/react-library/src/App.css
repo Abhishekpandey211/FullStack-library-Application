@@ -1,0 +1,193 @@
+:root{
+    --mainOpacity: rgba(83, 63, 63, 0.55);
+}
+
+.header {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("./Images/PublicImages/image-2.jpg");
+    opacity: var(--mainOpacity);
+    height: 25em !important;
+}
+
+.dark-overlay {
+    background-color: rgba(67, 77, 62, 0.35);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+.main-color {
+background-color: #0e76a8 ;
+}
+
+.col-image-left {
+    background-image: url("./Images/PublicImages/image-4.jpg");
+    height: 25em !important;
+}
+
+.col-image-right {
+    background-image: url("./Images/PublicImages/image-1.jpg");
+    height: 25em !important;
+}
+
+.lost-image {
+    background-image: url("./Images/PublicImages/image-3.jpg");
+    height: 25em !important;
+    width: "720"
+}
+
+.homepage-carousel-title {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+.book-div {
+    width: 480px;
+    height: 384px;
+}
+
+.inactiveLink {
+    pointer-events: none;
+    cursor: default;
+ }
+
+
+
+
+
+
+ /* Fade-in animation for carousel items */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Apply fade-in animation to each carousel item */
+.carousel-item {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Slide-in animation for active carousel item */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.carousel-item.active {
+    animation: slideIn 0.8s ease-in-out;
+}
+
+/* Hover effect for book cards */
+.return-book-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.return-book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(48, 36, 36, 0.2);
+}
+
+/* Adjust carousel button size */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: brightness(0) invert(1);
+}
+
+/* Styling for mobile view */
+@media (max-width: 768px) {
+    .return-book-card {
+        transform: scale(1);
+    }
+}
+
+
+
+
+/* Fade-in effect for the entire header */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to header */
+.header {
+    animation: fadeIn 1.2s ease-in-out;
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Gradient background */
+    color: rgb(147, 119, 119);
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Text animation for heading and paragraph */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.header h1 {
+    animation: slideUp 1s ease-in-out;
+}
+
+.header p {
+    animation: slideUp 1.2s ease-in-out;
+}
+
+/* Button hover effect */
+.btn.main-color {
+    background-color: #ff4b2b;
+    border: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn.main-color:hover {
+    background-color: #ff416c;
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(255, 65, 108, 0.3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header {
+        padding: 3rem 1rem;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1.2rem;
+    }
+}
