@@ -7,7 +7,7 @@ Front-end:-
 1. React
 2. JavaScript
 3. TypseScript
-4. Bootatrap
+4. Bootstrap
 
 Back-end:-
 
@@ -25,6 +25,7 @@ Okta is a identity and access management pltform that helps to manage user authe
 
 In my project i used okta to handle user authentication because it provide a secure and scalable solution. It allowed me to implement features like single sign-on and multi factor authentication without writing to customer code saving time and improving security of the appplication. 
 
+Testring API'S -> Used Postman Server which is used to test the api is calling from front end to the backend. 
 
 FrontEnd Part ->
 Authorization -> Auth:-
